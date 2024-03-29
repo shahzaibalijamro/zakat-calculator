@@ -11,7 +11,7 @@ function calculateZakat() {
     let finalAnswer = select.value * input12 + input11;
     let finalAnswer2 = finalAnswer / 40;
     if (finalAnswer >= 1744500) {
-        h1.innerHTML = "Your Zakat would be " + finalAnswer2;
+        h1.innerHTML = "Your Zakat would be " + finalAnswer2 + " PKR";
     } else {
         h1.innerHTML = "You are not eligible";
     }

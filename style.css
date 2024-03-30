@@ -3,11 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #eaf5f5;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #dac87c;
+  border-radius: 5px;
+}
 body{
     background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.h1{
+  padding-bottom: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
 }
 .mb{
     margin-bottom: 30px !important;
@@ -19,8 +36,18 @@ body{
     font-size: 14px;
     font-family: "Roboto", sans-serif;
 }
+.gold{
+  margin-bottom: 20px !important;
+    padding: 15px 0px 15px 20px;
+    width: 85%;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
 .container{
-    margin-top: 20vh !important;
+    margin-top: 16vh !important;
     margin-bottom: 20vh !important;
     background-color: #eaf5f5;
     max-width: 600px;
@@ -38,7 +65,7 @@ body{
 }
 .radio-inputs {
     font-family: "Roboto", sans-serif;
-    margin: 5px auto 15px auto;
+    margin: 0px auto 10px auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;

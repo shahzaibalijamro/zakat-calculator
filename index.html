@@ -16,16 +16,16 @@
 <body>
     <div class="container">
         <h1 class="main-head">Zakat Calculator</h1>
-        <input type="text" placeholder="Total amount of assets in PKR" class="mb cash">
+        <input type="text" placeholder="Enter total amount of assets in PKR excluding gold" class="mb cash">
         <br>
-        <input type="text" placeholder="Amount of Gold" class="mb gold">
+        <input type="text" placeholder="Enter amount of gold" class="mb gold">
         <!-- <select name="" id="select">
             <option value="19942.042902">in gram</option>
             <option value="232600">in Tola</option>
         </select> -->
         <div class="radio-inputs">
             <label class="radio">
-              <input class="radio1" value="19942.042902" type="radio" name="radio">
+              <input class="radio1" value="19942" type="radio" name="radio">
               <span class="name">In gram</span>
             </label>
             <label class="radio">
@@ -35,7 +35,7 @@
           </div>
         <br>
         <button onclick="calculateZakat()">Calculate Zakat</button>
-        <h1 style="padding-bottom: 20px !important;" class="h1 main"></h1>
+        <h1 class="h1 main">According to the teachings of Islam, Muslims must meet a certain threshold (Nisab) before they can qualify for zakat. That nisab when calculated based on usually Gold and Total savings in Cash, is approximately 7.5 Tolas of pure gold (or equivalent of the current price of this amount of gold). Zakat is 2.5% or 1/40 of an individual's total savings and wealth.</h1>
     </div>
     <script src="app.js"></script>
 </body>

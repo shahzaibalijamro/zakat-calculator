@@ -7,9 +7,10 @@ body{
     background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .mb{
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
     padding: 15px 0px 15px 20px;
     width: 85%;
     margin: 0 auto;
@@ -20,6 +21,7 @@ body{
 }
 .container{
     margin-top: 20vh !important;
+    margin-bottom: 20vh !important;
     background-color: #eaf5f5;
     max-width: 600px;
     text-align: center;
@@ -29,14 +31,14 @@ body{
 .main-head{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: "Roboto", sans-serif;
-    padding: 10px 0px;
+    padding: 20px 0px;
     background-color: #dac87c;
 }
 .radio-inputs {
     font-family: "Roboto", sans-serif;
-    margin: 0 auto;
+    margin: 5px auto 15px auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;

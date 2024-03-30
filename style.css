@@ -1,23 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 10px;
   background-color: #eaf5f5;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: #dac87c;
   border-radius: 5px;
 }
-body{
-    background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+body {
+  background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-.h1{
+
+.h1 {
   padding-bottom: 20px !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -26,46 +30,176 @@ body{
   line-height: 25px;
   text-align: center;
 }
-.mb{
-    margin-bottom: 30px !important;
-    padding: 15px 0px 15px 20px;
-    width: 85%;
-    margin: 0 auto;
-    border: 0;
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
+
+.mb {
+  margin-bottom: 30px !important;
+  padding: 15px 0px 15px 20px;
+  width: 85%;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
-.gold{
+
+input:focus-visible {
+  outline-offset: 0px;
+  outline-color: #dac87c;
+}
+
+.gold {
   margin-bottom: 20px !important;
-    padding: 15px 0px 15px 20px;
-    width: 85%;
-    margin: 0 auto;
-    border: 0;
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
+  padding: 15px 0px 15px 20px;
+  width: 85%;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
-.container{
-    margin-top: 16vh !important;
-    margin-bottom: 20vh !important;
-    background-color: #eaf5f5;
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 25px;
+
+.container {
+  margin-top: 15vh !important;
+  margin-bottom: 20vh !important;
+  background-color: #eaf5f5;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 25px;
 }
-.main-head{
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    margin-bottom: 30px;
-    font-family: "Roboto", sans-serif;
-    padding: 20px 0px;
-    background-color: #dac87c;
+
+.main-head {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0px;
+  background-color: #dac87c;
 }
+
 .radio-inputs {
+  font-family: "Roboto", sans-serif;
+  margin: 0px auto 10px auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked+.name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color);
+  --color: #dac87c;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 0px 0px 20px 0px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: gold;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: white;
+  transition: background 0s;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:620px){
+  .container{
+    margin-top: 14vh !important;
+  margin-bottom: 20vh !important;
+  margin: 0 20px;
+  }
+}
+@media(max-width:400px){
+  .container{
+    margin-top: 10vh !important;
+    margin: 0 15px;
+  }
+  .h1{
+    padding-bottom: 20px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
     font-family: "Roboto", sans-serif;
-    margin: 0px auto 10px auto;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .radio-inputs{
+    font-family: "Roboto", sans-serif;
+    margin: 0px auto 5px auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -77,78 +211,33 @@ body{
     max-width: 200px;
     font-size: 14px;
   }
-  
-  .radio-inputs .radio {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-  
-  .radio-inputs .radio input {
-    display: none;
-  }
-  
-  .radio-inputs .radio .name {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .5rem 0;
-    color: rgba(51, 65, 85, 1);
-    transition: all .15s ease-in-out;
-  }
-  
-  .radio-inputs .radio input:checked + .name {
-    background-color: #fff;
-    font-weight: 600;
-  }
-  button {
+  .gold{
+    margin-bottom: 20px !important;
+    padding: 11px 0px 11px 12px;
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
-    background-color: var(--color);
-    --color: #dac87c;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 0px 0px 20px 0px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color .5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: #fff;
-   }
-   
-   button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: white;
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
-   button:hover {
-    color: gold;
-   }
-   
-   button:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
-   }
-   
-   button:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   button:active:before {
-    background: white;
-    transition: background 0s;
-   }
+  }
+  .mb{
+    margin-bottom: 20px !important;
+    padding: 11px 0px 11px 12px;
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  .main-head{
+    font-size: 26px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 25px;
+    margin-bottom: 28px;
+    font-family: "Roboto", sans-serif;
+    padding: 16px 0px;
+    background-color: #dac87c;
+  }
+}

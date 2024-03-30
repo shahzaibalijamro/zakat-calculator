@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Zakat Calculator</h1>
-    <input type="text" placeholder="cash-in-hand" class="cash">
-    <input type="text" placeholder="How much gold do you have?" class="gold">
-    <select name="" id="select">
-        <option value="19942.042902">Calculate Per gram</option>
-        <option value="232600">Calculate Per Tola</option>
-    </select>
-    <br>
-    <button onclick="calculateZakat()">Calculate Zakat</button>
-    <h1 class="h1"></h1>
+    <div class="container">
+        <h1 class="main-head">Zakat Calculator</h1>
+        <input type="text" placeholder="total amount of assets in PKR" class="cash">
+        <input type="text" placeholder="Amount of Gold" class="gold">
+        <select name="" id="select">
+            <option value="19942.042902">in gram</option>
+            <option value="232600">in Tola</option>
+        </select>
+        <br>
+        <button onclick="calculateZakat()">Calculate Zakat</button>
+        <h1 class="h1 main"></h1>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,164 +1,125 @@
-body{
-    background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-}
-.cash{
-    display: block;
-    margin-bottom: 20px;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: #e3e9ff;
+body{
+    background-image: url(60834e7844c61f2fa0b3344d_ramadan-zakat-calculator-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-::-webkit-scrollbar-thumb{
-    background-color: #af7eeb;
-    border-radius: 5px;
+.mb{
+    margin-bottom: 20px !important;
+    padding: 15px 0px 15px 20px;
+    width: 85%;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
 }
-.main-head {
-    color: #6e7189;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 23px;
-}
-
-.container {
-    padding: 20px !important;
-    background-color: white;
-    margin: 0 auto !important;
-    max-width: 500px;
-    text-align: center;
+.container{
     margin-top: 20vh !important;
+    background-color: #eaf5f5;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
 }
-
-.head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #af7eeb;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 15px !important;
+.main-head{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 0px;
+    background-color: #dac87c;
 }
-
-.fa {
-    font-size: 23px;
-}
-
-.fa-1 {
-    font-size: 21px;
-    color: forestgreen;
-    cursor: pointer;
-}
-
-.fa-2 {
-    font-size: 21px;
-    color: red;
-    cursor: pointer;
-}
-
-.main {
-    margin-top: 15px !important;
-    background-color: white;
-    /* padding: 0 20px 20px 20px; */
-    border-radius: 5px;
-}
-
-.abc{
-    font-family: "Roboto", sans-serif;font-weight: 500;font-style: normal;font-size: 25px;
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.search {
-    width: 100%;
-    display: inline-block;
+.radio-inputs {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
     position: relative;
-  }
-  .search input[type="text"] {
-    font-size: 16px;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  :focus-visible{
-    outline: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    max-width: 200px;
+    font-size: 14px;
   }
   
-  .search button[type="submit"] {
-    font-size: 16px;
-    background-color: #af7eeb;
-    border: none;
-    color: #fff;
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
     cursor: pointer;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  }
+  button {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color);
+    --color: #dac87c;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+   }
+   
+   button:before {
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    transition: .9s ease;
-  }
-  
-  .search button[type="submit"]:hover {
-    transform: scale(1.1);
-    color: rgb(255, 255, 255);
-    background-color: #843dda;
-  }
-  
-
-@media(max-width:520px) {
-    .container {
-        padding: 0 25px;
-    }
-    .container {
-        margin-top: 18vh !important;
-    }
-}
-
-@media(max-width:400px) {
-    .container {
-        padding: 0 20px;
-    }
-    .container {
-        margin-top: 17vh !important;
-    }
-    .abc{
-        font-family: "Roboto", sans-serif;font-weight: 500;font-style: normal;font-size: 23px;
-    }
-    .fa {
-        font-size: 22px;
-    }
-}
-@media(max-width:350px) {
-    .container {
-        margin-top: 15vh !important;
-    }
-    .container {
-        padding: 0 20px;
-    }
-}
+    z-index: -1;
+    background: white;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: gold;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: white;
+    transition: background 0s;
+   }

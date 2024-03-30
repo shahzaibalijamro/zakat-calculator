@@ -2,7 +2,9 @@ let input1 = document.querySelector(".cash");
 let input2 = document.querySelector(".gold");
 let h1 = document.querySelector(".h1");
 let select = document.querySelector("#select");
+let radio1 = document.querySelector(".radio1")
 function calculateZakat() {
+    console.log(radio11.value);
     let input11 = parseFloat(input1.value);
     let input12 = parseFloat(input2.value);
     if (isNaN(input11)) {

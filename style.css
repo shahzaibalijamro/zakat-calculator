@@ -177,8 +177,8 @@ button:active:before {
 
 @media(max-width:620px){
   .container{
-    margin-top: 14vh !important;
-  margin-bottom: 20vh !important;
+    margin-top: 12vh !important;
+  margin-bottom: 12vh !important;
   margin: 0 20px;
   }
 }

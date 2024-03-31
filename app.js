@@ -23,9 +23,9 @@ function calculateZakat() {
     let finalAnswer2 = finalAnswer / 40;
     if (finalAnswer >= 1744500) {
         if (radio1.checked===true) {
-            h1.innerHTML = `1. You currently possess ${input11} PKR of amount in cash. <br> 2. You currently possess ${input12} grams of gold, whose worth is ${finalAnswer-input11} PKR. <br> 3. Upon adding both values and dividing the total by 40. <br> 4.  We get the amount of zakat you are obliged to give which is <br> ${finalAnswer2} PKR`;
+            h1.innerHTML = `1. You currently possess ${input11} PKR of amount in cash. <br> 2. You currently possess ${input12} grams of gold, whose worth is ${finalAnswer-input11} PKR. <br> 3. Upon adding both values and dividing the total by 40. <br> 4.  We get the amount of Zakat you are obliged to give which is <br> <span class="zakat"> ${finalAnswer2} PKR. </span`;
         }else if(radio2.checked===true){
-            h1.innerHTML = `1. You currently possess ${input11} PKR of amount in cash. <br> 2. You currently possess ${input12} tolas of gold, whose worth is ${finalAnswer-input11} PKR. <br> 3. Upon adding both values and dividing the total by 40. <br> 4.  We get the amount of zakat you are obliged to give which is <br> ${finalAnswer2} PKR`;
+            h1.innerHTML = `1. You currently possess ${input11} PKR of amount in cash. <br> 2. You currently possess ${input12} tolas of gold, whose worth is ${finalAnswer-input11} PKR. <br> 3. Upon adding both values and dividing the total by 40. <br> 4.  We get the amount of zakat you are obliged to give which is <br> <span class="zakat"> ${finalAnswer2} PKR. </span`;
         }
     } else {
         h1.innerHTML = "You are not obliged to give zakat.";

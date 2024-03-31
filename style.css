@@ -166,7 +166,9 @@ button:active:before {
   background: white;
   transition: background 0s;
 }
-
+.animate__animated.animate__slideInUp {
+  --animate-duration: 0.8s;
+}
 
 
 
